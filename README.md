@@ -27,6 +27,7 @@
 - JournalNode
 - Client
     文件写入
+    文件拆分
 
 ### process ###
 

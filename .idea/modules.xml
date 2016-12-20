@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mdfs.iml" filepath="$PROJECT_DIR$/mdfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mdfs-client/mdfs-client.iml" filepath="$PROJECT_DIR$/mdfs-client/mdfs-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mdfs-datanode/mdfs-datanode.iml" filepath="$PROJECT_DIR$/mdfs-datanode/mdfs-datanode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mdfs-journalnode/mdfs-journalnode.iml" filepath="$PROJECT_DIR$/mdfs-journalnode/mdfs-journalnode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mdfs-namenode/mdfs-namenode.iml" filepath="$PROJECT_DIR$/mdfs-namenode/mdfs-namenode.iml" />
+    </modules>
+  </component>
+</project>
