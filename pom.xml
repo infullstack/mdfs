@@ -13,6 +13,7 @@
         <module>mdfs-datanode</module>
         <module>mdfs-journalnode</module>
         <module>mdfs-client</module>
+        <module>mdfs-common</module>
     </modules>
     <build>
         <plugins>
