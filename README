@@ -1,38 +1,34 @@
 
 
 
-## RoadMap
+## RoadMap ##
 
-### summary
+### summary ###
 
 实现分布式本地文件存储，目的是为了更深入的学习HDFS底层实现原理。
 
-### HA
+### HA ###
 
 1. active standby
 2. QJN
+3. status
 
-### File RW
+### File RW ###
 
 1. R
 2. W
 
-### Moudle
+### Moudle ###
 
-NameNode
+- NameNode
     文件分布
-DataNode
+- DataNode
     数据存储
-JournalNode
-Client
+- JournalNode
+- Client
     文件写入
 
-
-status
-
-
-
-process
+### process ###
 
 1. 实现
 2. 参考源码
