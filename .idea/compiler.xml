@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="mdfs-client" />
+        <module name="mdfs-common" />
         <module name="mdfs-datanode" />
         <module name="mdfs-journalnode" />
         <module name="mdfs-namenode" />
@@ -31,6 +32,7 @@
     <bytecodeTargetLevel>
       <module name="mdfs" target="1.8" />
       <module name="mdfs-client" target="1.8" />
+      <module name="mdfs-common" target="1.8" />
       <module name="mdfs-datanode" target="1.8" />
       <module name="mdfs-journalnode" target="1.8" />
       <module name="mdfs-namenode" target="1.8" />
