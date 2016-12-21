@@ -50,6 +50,7 @@ public class FileSender {
             file.setTargetFileName("test.txt");
             file.setTargetPath("\\test\\");
             lastWriteFuture = ch.writeAndFlush(JSONObject.toJSONString(file)+ "\r\n");
+
             // Wait until all messages are flushed before closing the channel.
             if (lastWriteFuture != null) {
                 lastWriteFuture.sync();

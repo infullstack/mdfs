@@ -29,9 +29,9 @@ public class PropertiesUtils {
 
     public static void init() {
         PropertiesUtils.load("mdfs-site.properties");
-        MDFSConstants.MDFS_DATA_DIR = PropertiesUtils.get(MDFSConstants.CONFIG_MDFS_DATA_DIR);
-        logger.info(MDFSConstants.MDFS_DATA_DIR );
-        MDFSConstants.MDFS_REPLICATION = PropertiesUtils.get(MDFSConstants.CONFIG_MDFS_REPLICATION);
+        Constants.MDFS_DATA_DIR = PropertiesUtils.get(Constants.CONFIG_MDFS_DATA_DIR);
+        logger.info(Constants.MDFS_DATA_DIR );
+        Constants.MDFS_REPLICATION = PropertiesUtils.get(Constants.CONFIG_MDFS_REPLICATION);
     }
 
     public static String get(String key) {

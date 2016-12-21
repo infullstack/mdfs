@@ -4,5 +4,6 @@
     <mapping directory="" vcs="svn" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mdfs-common" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/mdfs-communication" vcs="svn" />
   </component>
 </project>
