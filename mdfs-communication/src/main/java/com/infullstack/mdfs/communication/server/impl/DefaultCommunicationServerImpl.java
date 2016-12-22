@@ -1,5 +1,6 @@
 package com.infullstack.mdfs.communication.server.impl;
 
+import com.infullstack.mdfs.common.utils.Constants;
 import com.infullstack.mdfs.communication.server.CommunicationServer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelHandler;
@@ -11,9 +12,9 @@ import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
+
 import javax.net.ssl.SSLException;
 import java.security.cert.CertificateException;
-import static com.infullstack.mdfs.common.utils.Constants.SSL;
 
 /**
  * Created by Ray on 2016/12/21 0021.
@@ -35,7 +36,7 @@ public class DefaultCommunicationServerImpl implements CommunicationServer {
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
-            if (SSL) {
+            if (Constants.SSL) {
                 SelfSignedCertificate ssc = new SelfSignedCertificate();
                 sslCtx = SslContextBuilder.forServer(ssc.certificate(), ssc.privateKey()).build();
             } else {

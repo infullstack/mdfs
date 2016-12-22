@@ -1,6 +1,7 @@
 package com.infullstack.mdfs.communication.server.impl;
 
 import com.infullstack.mdfs.communication.common.DefaultCommunicationInitializer;
+import com.infullstack.mdfs.communication.common.ProtobufCommunicationInitializer;
 import com.infullstack.mdfs.communication.server.CommunicationServer;
 import io.netty.channel.ChannelHandler;
 import io.netty.handler.ssl.SslContext;
@@ -30,16 +31,20 @@ public class TesServer {
     }
 
 //    @Test
-    public void testServer() {
-        ChannelHandler handler = new DefaultCommunicationServerHandler();
-        ChannelHandler initializer = new DefaultCommunicationInitializer(sslCtx, handler);
-        CommunicationServer server = new DefaultCommunicationServerImpl(PORT, initializer);
-    }
-
-    public static void main(String[] args){
+    public void testDefaultServer() {
         ChannelHandler handler = new DefaultCommunicationServerHandler();
         ChannelHandler initializer = new DefaultCommunicationInitializer(sslCtx, handler);
         CommunicationServer server = new DefaultCommunicationServerImpl(PORT, initializer);
         server.start();
+    }
+    public void testProtobufServer() {
+        ChannelHandler handler = new ProtobufCommunicationServerHandler();
+        ChannelHandler initializer = new ProtobufCommunicationInitializer(sslCtx, handler);
+        CommunicationServer server = new DefaultCommunicationServerImpl(PORT, initializer);
+        server.start();
+    }
+
+    public static void main(String[] args){
+        new TesServer().testProtobufServer();
     }
 }

@@ -1,7 +1,5 @@
 package com.infullstack.mdfs.common.utils;
 
-import junit.framework.TestCase;
-import org.junit.Test;
 import static org.junit.Assert.assertNotNull;
 
 
